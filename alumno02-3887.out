@@ -1,0 +1,43 @@
+Time taken by reduction operation using a function: 45 ms ± 111 µs per loop (mean ± std. dev. of 2 runs, 10 loops each)
+And the result of the sum of numbers in the range [0, value) is: 25045.13048211654
+
+Time taken by reduction operation using numpy.sum(): 95.1 µs ± 14.8 ns per loop (mean ± std. dev. of 2 runs, 10,000 loops each)
+Now, the result using numpy.sum(): 25045.130482116656 
+ 
+Time taken by reduction operation using numpy.ndarray.sum(): 73.6 µs ± 877 ns per loop (mean ± std. dev. of 2 runs, 10,000 loops each)
+Now, the result using numpy.ndarray.sum(): 25045.130482116656
+Tiempo para la operación de reducción secuencial:
+Time taken by reduction operation using a single process: 44.8 ms ± 255 µs per loop (mean ± std. dev. of 2 runs, 10 loops each)
+Resultado de la suma secuencial: 25076.934798268292
+
+
+Tiempo para la operación de reducción con 1 procesos:
+Time taken by reduction operation using 1 processes: 81.7 ms ± 897 µs per loop (mean ± std. dev. of 2 runs, 10 loops each)
+Resultado de la suma con 1 procesos: 25076.934798268292
+
+Tiempo para la operación de reducción con 2 procesos:
+Time taken by reduction operation using 2 processes: 64.8 ms ± 268 µs per loop (mean ± std. dev. of 2 runs, 10 loops each)
+Resultado de la suma con 2 procesos: 25076.934798268616
+
+Tiempo para la operación de reducción con 4 procesos:
+Time taken by reduction operation using 4 processes: 68.4 ms ± 12.1 µs per loop (mean ± std. dev. of 2 runs, 10 loops each)
+Resultado de la suma con 4 procesos: 25076.934798268507
+Tiempo para la función original:
+Tiempo: 4.51 s ± 11.1 ms per loop (mean ± std. dev. of 2 runs, 1 loop each)
+Resultado: 2500118.638920056 
+
+Tiempo para la función con @njit:
+Tiempo: 19.6 ms ± 20.3 µs per loop (mean ± std. dev. of 2 runs, 1 loop each)
+Resultado: 2500118.638920056 
+
+Tiempo para la función con @njit(parallel=True):
+Tiempo: 5.23 ms ± 577 µs per loop (mean ± std. dev. of 2 runs, 1 loop each)
+Resultado: 2500118.6389200063 
+
+Valor de 'value' establecido en: 50000000
+Tiempo para la función original:
+Resultado: 24999785.770199306
+Tiempo para la función con @njit:
+Resultado: 24999785.770199306
+Tiempo para la función con @njit(parallel=True):
+Resultado: 24999785.770199217
