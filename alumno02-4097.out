@@ -1,0 +1,14 @@
+Tiempo para la operación de reducción secuencial:
+Time taken by reduction operation using numpy.sum(): 12.6 µs ± 3.49 ns per loop (mean ± std. dev. of 2 runs, 100,000 loops each)
+Resultado de la suma secuencial: 25081.059353347486
+
+
+Tiempo para la operación de reducción con 1 procesos:
+Time taken by reduction operation using 1 processes: 2.51 ms ± 148 µs per loop (mean ± std. dev. of 2 runs, 100 loops each)
+Resultado de la suma con 1 procesos: 25081.059353347486
+
+Tiempo para la operación de reducción con 2 procesos:
+Time taken by reduction operation using 2 processes: 4.09 ms ± 7.68 µs per loop (mean ± std. dev. of 2 runs, 100 loops each)
+Resultado de la suma con 2 procesos: 25081.05935334749
+
+Tiempo para la operación de reducción con 4 procesos:
